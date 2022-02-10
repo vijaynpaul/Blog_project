@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.content-wrap {
+    grid-column: 2/4;
+}
+
+span {
+    font-weight: bold;
+}
+
+#section-b {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    max-height: min-content;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: 10px solid rgb(101, 118, 121);
+    justify-content: space-evenly;
+}
+
+.card-title {
+    font-style: italic;
+}
+
+#main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-decoration: underline;
+}

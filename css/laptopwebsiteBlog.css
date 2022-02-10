@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+span {
+    color: rgb(86, 185, 117);
+}
+
+nav {
+    background: #333;
+    grid-area: nav;
+}
+
+main {
+    background: rgb(195, 193, 199);
+    grid-area: main;
+}
+
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: rgb(195, 193, 199);
+    grid-area: sidebar;
+}
+
+.gallery {
+    width: 100%;
+}
+
+#content1 {
+    background: rgb(195, 193, 199);
+    grid-area: content1;
+}
+
+#content2 {
+    background: rgb(195, 193, 199);
+    grid-area: content2;
+}
+
+#content3 {
+    background: rgb(195, 193, 199);
+    grid-area: content3;
+}
+
+footer {
+    background: rgb(64, 62, 219);
+    grid-area: footer;
+    /* text-decoration: underline; */
+}
